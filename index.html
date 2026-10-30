@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krishna Gupta | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+  <header>
+    <h1>Krishna Gupta</h1>
+    <p class="tagline">Computer Science Student &amp; AI-Assisted Developer</p>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about" class="portfolio-section">
+      <h2>About Me</h2>
+      <p>
+        I am a dedicated computer science student with a deep interest in software engineering, 
+        algorithms, and AI-assisted programming. I enjoy building clean, robust, and user-centric 
+        web applications, applying test-driven methodologies, and continuously exploring modern 
+        development workflows.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="portfolio-section">
+      <h2>Technical Skills</h2>
+      <ul class="skills-list">
+        <li><strong>Languages:</strong> Python, JavaScript, HTML5, CSS3, SQL</li>
+        <li><strong>Tools &amp; Frameworks:</strong> Git, GitHub, Cursor AI, VS Code, Google Colab</li>
+        <li><strong>Methodologies:</strong> Test-Driven Development (RED-FIX-GREEN), Code Reviews, RESTful APIs</li>
+        <li><strong>Cloud &amp; Deployment:</strong> Vercel, Static Site Hosting, Groq Cloud API</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="portfolio-section">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Reading List Web App</h3>
+          <p>A responsive client-side reading list manager with status filtering, duplicate prevention, and real-time statistics.</p>
+          <p><a href="https://github.com/krishnagupta/reading-list-app" target="_blank" rel="noopener noreferrer">View Project on GitHub</a></p>
+        </article>
+
+        <article class="project-card">
+          <h3>Code With AI Quiz Platform</h3>
+          <p>An interactive educational quiz application evaluating programming paradigms and prompt engineering concepts.</p>
+          <p><a href="https://github.com/krishnagupta/code-with-ai-quiz" target="_blank" rel="noopener noreferrer">View Project on GitHub</a></p>
+        </article>
+
+        <article class="project-card">
+          <h3>Python Student Utilities &amp; TDD Suite</h3>
+          <p>A suite of tested mathematical and grading utilities constructed using strict RED-FIX-GREEN unit testing cycles.</p>
+          <p><a href="https://github.com/krishnagupta/python-student-utils" target="_blank" rel="noopener noreferrer">View Project on GitHub</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Lecture 14: Weather API Section -->
+    <section id="weather-section" class="weather-section">
+      <h2>Live Weather Checker</h2>
+      <p>Enter a city to check its current weather.</p>
+      <div class="weather-controls">
+        <input id="cityInput" type="text" placeholder="Enter city (e.g., Jaipur)" />
+        <button id="weatherButton" type="button">Get Weather</button>
+      </div>
+      <p id="weatherResult" aria-live="polite">Enter a city and click Get Weather.</p>
+    </section>
+
+    <!-- Lecture 15: Chatbot Section -->
+    <section id="portfolio-chatbot" class="chatbot-section">
+      <h2>Ask My Portfolio Chatbot</h2>
+      <p>Ask a question and get a response from the AI.</p>
+      <div id="chatMessages" class="chat-messages" aria-live="polite">
+        <p class="bot-message">Hello! Ask me something about this portfolio.</p>
+      </div>
+      <form id="chatForm" class="chat-form">
+        <input id="chatInput" type="text" placeholder="Type your question" required>
+        <button id="chatSend" type="submit">Send</button>
+      </form>
+      <p id="chatStatus" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Krishna Gupta. All rights reserved.</p>
+    <button id="themeToggle" type="button">Switch to Dark Mode</button>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="config.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>
